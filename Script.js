@@ -12,7 +12,7 @@ const cityCond = document.getElementById("city-c");
 let timeInterval = null;
 
 async function getData(cityName) {
-  const ot = await fetch(`http://api.weatherapi.com/v1/current.json?key=76968edcc4b2466b88085421250612&q=${encodeURIComponent(cityName)}&aqi=yes`);
+  const ot = await fetch(`https://api.weatherapi.com/v1/current.json?key=76968edcc4b2466b88085421250612&q=${encodeURIComponent(cityName)}&aqi=yes`);
   return await ot.json();
 }
 
@@ -134,3 +134,4 @@ document.addEventListener("keydown", (e) => {
     bt.click();
   }
 });
+
